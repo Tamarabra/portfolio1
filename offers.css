@@ -1,0 +1,482 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.nav {
+    background-color: rgb(27, 26, 26);
+}
+
+.navbar {
+    background: white;
+    padding-right: 15px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 5vh;
+    /*border: 2px solid black;*/
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#omo {
+    margin-bottom: 60px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    position: relative;
+    left: 60px;
+    top: -35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+    text-decoration: none;
+}
+
+button {
+    background-color: rgb(27, 26, 26);
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px none;
+    padding: 10px;
+    color: white;
+    width: 100px;
+    transition: transform 0.3s;
+}
+
+button a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.diff:hover {
+    background-color: crimson;
+    transform: scale(1.1);
+}
+
+.dropdown__arrow {
+    font-size: 1.25rem;
+    font-weight: initial;
+    transition: transform .4s;
+}
+
+#bst a:hover {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    transition: .4s;
+}
+
+.imgone {
+    font-weight: 600;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    margin-top: 8px;
+    background-color: white;
+    padding-bottom: 20px;
+    width: 90px;
+    z-index: 2;
+}
+
+.dropdown li {
+    display: block;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 7px;
+    padding-bottom: 10px;
+}
+
+.onion:hover {
+    background-color: crimson;
+    transition: .4s;
+}
+
+.ser:hover .dropdown {
+    display: block;
+}
+
+.logo:hover {
+    color: white;
+}
+
+.head {
+    color: white;
+    font-family: stencil;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+.container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+}
+
+.pm {
+    background-color: rgb(27, 26, 26);
+    text-align: center;
+    width: 300px;
+    margin-right: 50px;
+    border: 2px solid teal;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.pm h1 {
+    padding-bottom: 10px;
+}
+
+.pm i {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.tp {
+    background-color: rgb(27, 26, 26);
+    text-align: center;
+    width: 300px;
+    margin-right: 50px;
+    border: 2px solid teal;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tp h1 {
+    padding-bottom: 10px;
+}
+
+.tp i {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.dt {
+    background-color: rgb(27, 26, 26);
+    text-align: center;
+    width: 300px;
+    border: 2px solid teal;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.dt h1 {
+    padding-bottom: 10px;
+}
+
+.dt i {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+.wolo {
+    font-size: 50px;
+    position: relative;
+    top: 40px;
+    left: 60px;
+}
+
+
+@media screen and ( max-width: 321px) {
+    .imgone {
+        left: 10px;
+        max-width: 50px;
+        font-size: 25px;
+        display: flex;
+        top: 22px;
+    }
+
+    .container {
+        width: 50px;
+        display: flex;
+    }
+
+    .head {
+        left: -10px;
+        font-size: 20px;
+    }
+
+    .pm, .tp, .dt {
+        width: 50px;
+    }
+
+    /*.pm {
+        position: relative;
+        left: -80px;
+    }
+    .tp {
+        position: relative;
+        left: -80px;
+    }
+    .dt {
+        position: relative;
+        left: -80px;
+    }*/
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav .fa-solid.bb {
+        display: block;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    nav ul {
+        background-color: teal;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 1;
+        transition: .5s ease;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        cursor: pointer;
+    }
+
+    button {
+        position: relative;
+        top: 40px;
+        left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .ser {
+        position: absolute;
+        top: 140px;
+    }
+    .cont {
+        position: relative;
+        top: 40px;
+    }
+
+    .container {
+        flex-direction: column;
+        position: relative;
+        left: 120px;
+    }
+}
+
+@media screen and ( 321px <= width <= 601px) {
+    .imgone {
+        left: 10px;
+        max-width: 50px;
+        font-size: 25px;
+        display: flex;
+        top: 22px;
+    }
+
+    .container {
+        width: 50px;
+        display: flex;
+    }
+
+    .head {
+        left: -10px;
+        font-size: 30px;
+    }
+
+    .pm, .tp, .dt {
+        width: 200px;
+    }
+
+    /*.pm {
+        position: relative;
+        left: 50px;
+    }
+    .tp {
+        position: relative;
+        left: 50px;
+    }
+    .dt {
+        position: relative;
+        left: 50px;
+    }*/
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav .fa-solid.bb {
+        display: block;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    nav ul {
+        background-color: teal;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 1;
+        transition: .5s ease;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        cursor: pointer;
+    }
+
+    button {
+        position: relative;
+        top: 40px;
+        left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .ser {
+        position: absolute;
+        top: 140px;
+    }
+    .cont {
+        position: relative;
+        top: 40px;
+    }
+
+    .container {
+        flex-direction: column;
+        position: relative;
+        left: 120px;
+    }
+}
+
+@media screen and ( max-width: 768px) {
+    .imgone {
+        left: 10px;
+        max-width: 50px;
+        font-size: 25px;
+        display: flex;
+        top: 22px;
+    }
+
+    .container {
+        width: 50px;
+        display: flex;
+    }
+
+    .pm, .tp, .dt {
+        width: 200px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav .fa-solid.bb {
+        display: block;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    nav ul {
+        background-color: teal;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 1;
+        transition: .5s ease;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        cursor: pointer;
+    }
+
+    button {
+        position: relative;
+        top: 40px;
+        left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .ser {
+        position: absolute;
+        top: 140px;
+    }
+    .cont {
+        position: relative;
+        top: 40px;
+    }
+
+    .container {
+        flex-direction: column;
+        position: relative;
+        left: 120px;
+    }
+}
